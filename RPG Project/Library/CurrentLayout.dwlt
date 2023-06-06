@@ -42,8 +42,8 @@ MonoBehaviour:
     y: 0
     width: 509
     height: 781
-  m_MinSize: {x: 204, y: 224}
-  m_MaxSize: {x: 4004, y: 4024}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 19}
   m_Panes:
   - {fileID: 19}
@@ -73,7 +73,7 @@ MonoBehaviour:
   m_MinSize: {x: 887, y: 498}
   m_MaxSize: {x: 16012, y: 14048}
   vertical: 0
-  controlID: 2124
+  controlID: 100
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -120,8 +120,8 @@ MonoBehaviour:
     y: 0
     width: 502
     height: 781
-  m_MinSize: {x: 202, y: 224}
-  m_MaxSize: {x: 4002, y: 4024}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 17}
   m_Panes:
   - {fileID: 17}
@@ -245,7 +245,7 @@ MonoBehaviour:
   m_MinSize: {x: 610, y: 498}
   m_MaxSize: {x: 12010, y: 14048}
   vertical: 1
-  controlID: 2125
+  controlID: 74
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -271,7 +271,7 @@ MonoBehaviour:
   m_MinSize: {x: 610, y: 224}
   m_MaxSize: {x: 12010, y: 4024}
   vertical: 0
-  controlID: 2126
+  controlID: 75
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -291,8 +291,8 @@ MonoBehaviour:
     y: 0
     width: 1017
     height: 781
-  m_MinSize: {x: 204, y: 224}
-  m_MaxSize: {x: 4004, y: 4024}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 18}
   m_Panes:
   - {fileID: 18}
@@ -389,19 +389,19 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts
+    - Assets/Scenes
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scripts
+  - Assets/Scenes
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\hollie.page\Documents\GitHub\RPG-Core-Combat\RPG Project
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: b80a0000
-    m_LastClickedID: 2744
+    m_SelectedIDs: d20b0000
+    m_LastClickedID: 3026
     m_ExpandedIDs: 000000007e090000440a0000820b000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -549,9 +549,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 620c0000
-      m_LastClickedID: 3170
-      m_ExpandedIDs: d2fbffff1e0c0000
+      m_SelectedIDs: 720c0000
+      m_LastClickedID: 3186
+      m_ExpandedIDs: d2fbffff220c0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -606,9 +606,9 @@ MonoBehaviour:
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -159.38461, y: -212.68343, z: 7.9115915}
+    m_Target: {x: 23.023438, y: 5.8404484, z: 20.92336}
     speed: 2
-    m_Value: {x: -159.38461, y: -212.68343, z: 7.9115915}
+    m_Value: {x: 23.023438, y: 5.8404484, z: 20.92336}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -636,13 +636,13 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: -0.29618758, y: 0.65433407, z: -0.31150535, w: -0.62216103}
+    m_Target: {x: -0.20800649, y: 0.32352978, z: -0.07313546, w: -0.92017007}
     speed: 2
-    m_Value: {x: -0.29618758, y: 0.65433407, z: -0.31150535, w: -0.62216103}
+    m_Value: {x: -0.20800649, y: 0.32352978, z: -0.07313546, w: -0.92017007}
   m_Size:
-    m_Target: 305.94238
+    m_Target: 21.51044
     speed: 2
-    m_Value: 305.94238
+    m_Value: 21.51044
   m_Ortho:
     m_Target: 0
     speed: 2
