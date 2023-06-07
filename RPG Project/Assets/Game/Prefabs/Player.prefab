@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 8884456107461949382}
   - component: {fileID: 3021894370960125364}
   - component: {fileID: 5993643620641782063}
+  - component: {fileID: 5825726111369434149}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -108,6 +109,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e8918ca82f318d4cbe95c7d76901fcb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _target: {fileID: 0}
 --- !u!95 &8884456107461949382
 Animator:
   serializedVersion: 3
@@ -139,7 +141,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f105a777a62323c4da0fe9e1cb7d4b8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mainCamera: {fileID: 0}
+  _mainCamera: {fileID: 0}
 --- !u!114 &5993643620641782063
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -150,6 +152,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e49cce7012007e24498b9331f2e18e11, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weaponRange: 2
+--- !u!114 &5825726111369434149
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8999763764282039700}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9316bd4621dccce4b8ffd5b0d201dee8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &4563164845277385671
