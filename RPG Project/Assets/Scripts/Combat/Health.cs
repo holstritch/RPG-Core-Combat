@@ -9,6 +9,12 @@ namespace RPG.Combat
         public float health = 100f;
 
         private bool isDead = false;
+
+        // public method so other classes can access bool variable
+        public bool IsDead()
+        {
+            return isDead;
+        }
         public void TakeDamage(float damage)
         {
             health = Mathf.Max(health - damage, 0);
