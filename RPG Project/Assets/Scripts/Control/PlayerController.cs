@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using RPG.Combat;
 using RPG.Movement;
+using RPG.Core;
 using UnityEngine;
 
 namespace RPG.Control
@@ -9,11 +10,19 @@ namespace RPG.Control
     public class PlayerController : MonoBehaviour
     {
         [SerializeField] private Camera _mainCamera;
+        private Health _health;
+            
+        private void Start()
+        {
+            _health = GetComponent<Health>();
+        }
         void Update()
         {
+            if (_health.IsDead()) return;
+            
             if (InteractWithCombat()) return;
             if (InteractWithMovement()) return;
-            print("can't move here");
+            
         }
 
         private bool InteractWithCombat()

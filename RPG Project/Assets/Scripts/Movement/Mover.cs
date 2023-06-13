@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using RPG.Combat;
 using RPG.Core;
 using UnityEngine;
 using UnityEngine.AI;
@@ -11,14 +12,17 @@ namespace RPG.Movement
     {
         [SerializeField] private Transform _target;
         private NavMeshAgent _navMeshAgent;
-
+        private Health _health;
         private void Start()
         {
             _navMeshAgent = GetComponent<NavMeshAgent>();
+            _health = GetComponent<Health>();
         }
 
         void Update()
         {
+            // disables navmesh agent as soon as dead
+            _navMeshAgent.enabled = !_health.IsDead();
             UpdateAnimator();
         }
 
