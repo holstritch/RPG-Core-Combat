@@ -16,12 +16,14 @@ namespace RPG.Core
         
         private Health _target;
         private Mover _mover;
+        private Animator _animator;
         
         private float timeSinceLastAttack = Mathf.Infinity;
 
         private void Start()
         {
             _mover = GetComponent<Mover>();
+            _animator = GetComponent<Animator>();
         }
 
         void Update()
@@ -56,9 +58,9 @@ namespace RPG.Core
 
         private void TriggerAttack()
         {
-            GetComponent<Animator>().ResetTrigger("stopAttack");
+            _animator.ResetTrigger("stopAttack");
             // triggers Hit() when in range
-            GetComponent<Animator>().SetTrigger("attack");
+            _animator.SetTrigger("attack");
         }
 
         // animation event
@@ -94,8 +96,8 @@ namespace RPG.Core
 
         private void StopAttack()
         {
-            GetComponent<Animator>().ResetTrigger("attack");
-            GetComponent<Animator>().SetTrigger("stopAttack");
+            _animator.ResetTrigger("attack");
+            _animator.SetTrigger("stopAttack");
         }
     }
 }
