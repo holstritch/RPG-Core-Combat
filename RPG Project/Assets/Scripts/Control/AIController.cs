@@ -13,6 +13,7 @@ namespace RPG.Control
     {
         
         [SerializeField] private float chaseDistance = 5f;
+        [SerializeField] private float suspicionTime = 5f;
 
         private GameObject _player;
         private Fighter _fighter;
@@ -20,6 +21,7 @@ namespace RPG.Control
         private Mover _mover;
 
         private Vector3 _guardPosition;
+        private float _timeSinceLastSawPlayer = Mathf.Infinity;
         private void Start()
         {
             _player = GameObject.FindWithTag("Player");
@@ -36,15 +38,35 @@ namespace RPG.Control
             
             if (InAttackRangeOfPlayer() && _fighter.CanAttack(_player))
             {
-                _fighter.Attack(_player);
+                _timeSinceLastSawPlayer = 0;
+                AttackBehaviour();
+            }
+            else if (_timeSinceLastSawPlayer < suspicionTime)
+            {
+                SuspicionBehaviour();
             }
             else
             {
                 // this method also cancels fighting
-                _mover.StartMoveAction(_guardPosition);
-                
+                GuardBehaviour();
             }
-                
+
+            _timeSinceLastSawPlayer += Time.deltaTime;
+        }
+
+        private void GuardBehaviour()
+        {
+            _mover.StartMoveAction(_guardPosition);
+        }
+
+        private void SuspicionBehaviour()
+        {
+            GetComponent<ActionScheduler>().CancelCurrentAction();
+        }
+
+        private void AttackBehaviour()
+        {
+            _fighter.Attack(_player);
         }
 
         private bool InAttackRangeOfPlayer()
