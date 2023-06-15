@@ -36,7 +36,7 @@ namespace RPG.Core
             
             if (!IsInRange())
             {
-                _mover.MoveTo(_target.transform.position);
+                _mover.MoveTo(_target.transform.position, 1f);
             }
             else
             {
