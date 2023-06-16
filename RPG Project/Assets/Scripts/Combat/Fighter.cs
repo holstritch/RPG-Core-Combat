@@ -92,6 +92,7 @@ namespace RPG.Core
         {
             StopAttack();
             _target = null;
+            _mover.Cancel();
         }
 
         private void StopAttack()
